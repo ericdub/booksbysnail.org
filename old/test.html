@@ -1,0 +1,23 @@
+<html>
+
+<head>
+
+ 
+
+</head>
+<body>
+ <div id="book"></div>
+   <script>
+     function handleResponse(response) {
+     for (var i = 0; i < response.items.length; i++) {
+       var item = response.items[i];
+       // in production code, item.text should have the HTML entities escaped.
+       document.getElementById("book").innerHTML += "<br>" + item.volumeInfo.title + " : " + item.volumeInfo.subtitle
+    + "<br>" + item.volumeInfo.authors + " "
+    + "<br>" + "<a href='http://dbrl.bibliocommons.com/search?t=smart&search_category=keyword&q=" + item.volumeInfo.industryIdentifiers.identifier.ISBN_10 + "&commit=Search'><img src='" + item.volumeInfo.imageLinks.thumbnail + "'></a> <br>";
+  }
+}
+</script>
+   <script src="https://www.googleapis.com/books/v1/volumes?q=isbn:1435497783&callback=handleResponse"></script>
+</body>
+</html>

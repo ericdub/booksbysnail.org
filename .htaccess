@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine on
+#RewriteRule ^.*$ http://www.dbrl.org/ [R]
+#RewriteCond %{REMOTE_ADDR} !^10\.2\.1\.21$
+#RewriteCond %{REMOTE_ADDR} !^10\.2\.1\.29$
+#RewriteRule ^signup.*$ http://www.booksbysnail.org/ [R=302]

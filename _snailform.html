@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div class="float-left"><img src="images/snail-postcard-350.jpg" alt="Books by Snail"  width="200" height="350"></div>
+<form id="form1" method="post" action="/app/mail/" class="form-box" />
+ <input type="hidden" name="recipients" value="outreach@dbrl.org" />
+<input type="hidden" name="good_url" value="http://intranet.dbrl.org/" />##redirect
+<input name="subject" type="hidden" id="subject" value="[Books by Snail Request]" />
+<input type="hidden" name="mail_options" value="PlainTemplate=tour-request.txt,TemplateMissing=" />
+<input type="hidden" name="env_report" value="REMOTE_ADDR,HTTP_USER_AGENT" />
+<input type="hidden" name="required" value="realname,email,group_name" />
+<p>
+<label for="realname">Your Name</label>
+<input type="text" id="realname" name="realname" value="" /></p>
+<p>
+  <label for="label">Street Address </label>
+  <input type="text" id="label" name="Address" value="" />
+</p>
+<p>
+  <label for="label2">Town</label>
+  <input type="text" id="label2" name="Address2" value="" />
+</p>
+<p></p>
+</body>
+</html>

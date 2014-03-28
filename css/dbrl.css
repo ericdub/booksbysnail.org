@@ -1,0 +1,57 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+
+	font-family: Libre
+}
+footer {
+
+	margin-top: 1em;
+}
+
+#book-request td {
+padding:5px;
+ 
+}
+.form-example { color:#4A7689; }
+
+.jumbotron {
+	background-color: #fff;
+}
+
+.jumbotron img {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+.navbar {
+
+	background-color: #990000;
+}
+.btn-primary {
+
+	background-color: #990000;
+
+}
+.btn-primary:active {
+
+	background-color: #990000;
+
+}
+.btn-primary:hover {
+
+	background-color: #29297A;
+
+}
+
+.starter-template .pull-left img {
+	margin-right: 1.5em;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+}
